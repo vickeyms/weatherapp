@@ -1,39 +1,53 @@
 body{
   margin: 0;
   padding: 0%;
-  background-color: rgb(236, 201, 201);
+  background-color: rgb(0, 0, 0);
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;}
-.container{
-  width: 350px;
-  padding: 20px;
-  background-color: aliceblue;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  .card {
 
-}
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    background-color: #e3e3e3;
+  }
+  
+  
+  
+  
 .input-container{
   width: 100%;
   display: flex;
   align-items: center;
-  border: 2px solid #70e6f3;
   overflow: hidden;
+  padding: 10px 10px;
 }
 .cityInput{
   flex:1;
-  border: none;
+  border:0 7px;
   font-size: 16px;
   outline: none;
-  padding: 10px;
+  padding: 10px 10px;
+  border-radius: 10px;
 }
 .search-icon{
   padding: 10px;
   height: 30px;
   cursor: pointer;
+  padding-right: 15px;
 
+}
+.search:hover{
+  cursor: pointer;
 }
 .search-icon img{
   margin-top: 0px;
@@ -90,6 +104,7 @@ body{
 
 .cord div span{
   font-size: 14px;
+  color: #000000;
 }
 .cord div span:nth-child(2),.humidity-percent,.windspeed{
   font-size: 18px;

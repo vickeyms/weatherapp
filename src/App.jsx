@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, react} from 'react'
 import './App.css'
+import { Button, Flex } from 'antd';
 import searchIcon from "./assets/search.png"
 import clear from "./assets/clear.png"
 import snowIcon from "./assets/snow.png"
@@ -136,7 +137,7 @@ function App() {
 )
   return (
     <>
-      <div className='container'>
+      <div className='card'>
         <div className='input-container'>
           <input type="text" className='cityInput' 
           placeholder='Search city' 
@@ -161,6 +162,8 @@ function App() {
         wind={wind}
         humidity={humidity}
         />}
+        
+        
       </div>
      
     </>
